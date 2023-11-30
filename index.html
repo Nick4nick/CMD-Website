@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <!--Colocar a logo do favicon-->
+        <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+        <title>Clínica CMD</title>
+        <link href="./css/estilo.css" rel="stylesheet" type="text/css"/>
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    </head>
+    
+    <!--PÁGINA DE INÍCIO/INDEX-->
+    <!--O CSS DELE É ESTILO.CSS-->
+    <body>
+        <header>
+            <nav>
+                <img src="./favicon/LOGO.ico" alt="Logo" id="logo">
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paginas/profissionais.html">Profissionais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paginas/quemsomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paginas/contato.html">Contato</a></li>
+                </ul>
+
+                <button class="mobile-menu-icon" onclick="menuShow()"><img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNlNWU1ZTUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTAsOXYyaDUwdi0yek0wLDI0djJoNTB2LTJ6TTAsMzl2Mmg1MHYtMnoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4="/></button>
+            </nav>
+
+            <ul class="mobile-menu">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/profissionais.html">Profissionais</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/quemsomos.html">Quem Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/contato.html">Contato</a></li>
+            </ul>
+        </header>
+        <script type="text/javascript" src="/javascript/pgPrincCarrossel.js"></script>
+        
+        <main>
+            <section>
+                <article class="slider">
+                    <ul class="slides">
+                        <!-- BOTÕES -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+
+                        <!-- Imagens do Slide -->
+                        <li class="slide um">
+                            <img src="imgs/banner01.png" alt="Imagem 'cuidado q sua família merece'">
+                        </li>
+                        <li class="slide dois">
+                            <img src="imgs/banner02.png" alt="Imagem 'Ambiente acolhedor'">
+                        </li>
+                        
+                        <!-- Navegador -->
+                        <li class="navigation-auto">
+                            <ul>
+                                <li class="auto-btn1"></li>
+                                <li class="auto-btn2"></li>
+                            </ul>
+                            
+                        </li>
+                    </ul> 
+
+                    <!--Laybel para botão-->
+                    <ul class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </ul>
+                    <!--Laybel para botão-->
+                </article>
+
+                <h2>Conheça Nossos Serviços</h2>
+                <article id="servicos">
+                    <ul>
+                        <li>
+                            <i id="consulta" class="fa-solid fa-stethoscope"></i>
+                            <h4>Consultas Médicas</h4>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i id="avaliacao" class="fa-solid fa-comments"></i>
+                            <h4>Avaliação</h4>
+                            <h4>Psicológica</h4>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i id="nutricao" class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                            <h4>Orientação</h4>
+                            <h4>Nutricional</h4>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i id="procedimento" class="fa-solid fa-user-doctor"></i>
+                            <h4>Procedimentos</h4>
+                            <h4>Cirúrgicos</h4>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i id="fisioterapia" class="fa-solid fa-person-walking-with-cane"></i>
+                            <h4>Fisioterapia</h4>
+                            <h4>para Dor</h4>
+                        </li>
+                    </ul>
+                </article>
+
+                <h2>Um Pouco Sobre Nós</h2>
+                <article id="sobre-nos">
+                    <ul>
+                        <li><p>Nossa premissa é oferecer serviços de saúde que atendam as espectativas dos clientes com competência, tecnologia, humanização e valorização da vida.</p></li>
+                        <li><p>Com mais de 11 anos, a Clínica Médica Debiasi dispõe de uma equipe médica qualificada com toda a infraestrutura, conforto e atendimento humanizado para você e sua família.</p></li>
+                    </ul>
+                    <img alt="Foto da Fachada" src="./imgs/Fachada.png"/>
+                </article>
+
+                <article id="video">
+                <!--Colocar o vídeo aqui (postar ele na internet)-->
+                </article>
+            </section>
+            <script type="text/javascript" src="./javascript/carrossel.js"></script>
+        </section>
+        </main>
+        <footer>
+            <address id="footer_content">
+                <ul id="footer_contacts">
+                    <li>
+                        <ul id="diretor">
+                            <li>
+                                <h2>Diretor Técnico</h2>
+                            </li>
+                            <li>
+                                <p>Dr. Paulo Sérgio Machado</p>
+                            </li>
+                            <li>
+                                <p>CRM-SC 13.638</p>
+                            </li>
+                            <li>
+                                <p>RQE 14.385</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul id="social_media_footer">
+                            <li><a href="https://www.instagram.com/clinicamedicadebiasi/" class="footer_link" target="_blank" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a></li>
+                            <li><a href="https://www.facebook.com/clinicamedicadebiasi" class="footer_link" target="_blank" id="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=%2B5548996814040&text=Ol%C3%A1%21&type=phone_number&app_absent=0" class="footer_link" target="_blank" id="whatsapp_geral">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=%2B5548996395410&text=Ol%C3%A1%21&type=phone_number&app_absent=0" class="footer_link" target="_blank" id="whatsapp_psiquiatria">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5548991602748" class="footer_link" target="_blank" id="whatsapp_ginecologia">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a></li>
+                        </ul> 
+                    </li>
+                </ul>
+
+                <ul id="footer_subscribe">
+                    <li>
+                        <h3>Administração</h3>
+                    </li>
+                    <li>
+                        <p>Escreva seu email e o administrativo retornará assim que possível.</p>
+                    </li>
+                    <form action="#" method="post">
+                        <input type="email" id="email">
+                        <textarea name="message" id="message" cols="30" rows="2 " placeholder="Digite sua mensagem..."></textarea>
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </form>
+                </ul>
+            </address>
+            <p class="rights"> 
+                &#169
+                2023 all rights reserved
+            </p>
+        </footer>
+    </body>
+</html>
